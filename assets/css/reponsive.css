@@ -65,4 +65,18 @@
         width: 100%;
         padding: 8px;
     }
+    .contact-form,
+    .contact-text {
+        float: initial;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .input-name,
+    .input-email {
+        float: initial;
+        width: 100%;
+    }
+    .input-name {
+        margin-bottom: 10px;
+    }
 }
