@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <title>Driver Manager</title>
 </head>
@@ -88,6 +89,10 @@
 
             <div class="container-icon-search">
                 <i class="icon-search ti-search"></i>
+            </div>
+
+            <div class="contaniner-icon-header-rps">
+                <i class="icon-menu ti-menu"></i>
             </div>
         </div>
 
@@ -232,31 +237,7 @@
 
 
 
-    <script type="text/javascript">
-        const modal = document.querySelector('.modal');
-        const modal_container = document.querySelector('.modal-container');
-        const btn_buy_tickets = document.querySelectorAll('.place-button')
-        const btn_close = document.querySelector('.modal-close');
-
-        function hiddenBuyTicket() {
-            modal.classList.remove('open');
-        }
-
-        function openBuyTicket() {
-            modal.classList.add('open');
-        }
-
-        for (const btnTicket of btn_buy_tickets) {
-            btnTicket.addEventListener('click', openBuyTicket);
-        }
-
-        modal.addEventListener('click', hiddenBuyTicket)
-
-        btn_close.addEventListener('click', hiddenBuyTicket);
-
-        modal_container.addEventListener('click', function(event) {
-            event.stopImmediatePropagation();
-        })
+    <script type="text/javascript" src="./assets/js/script.js">
     </script>
 
     </div>
