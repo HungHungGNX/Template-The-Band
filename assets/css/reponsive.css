@@ -1,11 +1,31 @@
 /* PC */
 
-@media(min-width:1024px) {}
+@media(min-width:1024px) {
+    .contaniner-icon-header-rps {
+        display: none;
+    }
+    #nav>li:hover .sub-nav {
+        display: block!important;
+    }
+    #nav .sub-nav {
+        display: none!important;
+    }
+}
 
 
 /* Tablet */
 
-@media(max-width:1023px) and (min-width:740px) {}
+@media(max-width:1023px) and (min-width:740px) {
+    .contaniner-icon-header-rps {
+        display: none;
+    }
+    #nav>li:hover .sub-nav {
+        display: block!important;
+    }
+    #nav .sub-nav {
+        display: none!important;
+    }
+}
 
 
 /* Mobile */
@@ -39,6 +59,7 @@
         font-size: 15px;
     }
     .contaniner-icon-header-rps {
+        display: block;
         position: absolute;
         top: 0;
         right: 0;
