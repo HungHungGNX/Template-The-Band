@@ -79,4 +79,7 @@
     .input-name {
         margin-bottom: 10px;
     }
+    .slider-content {
+        display: none;
+    }
 }
