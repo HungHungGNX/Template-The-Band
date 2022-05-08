@@ -33,6 +33,8 @@ const btn_menu = document.querySelector('.contaniner-icon-header-rps');
 const list_item_nav = document.querySelectorAll("#nav li a[href*='#']");
 const header = document.querySelector('#header');
 const height_header = header.clientHeight;
+const sub_nav = document.querySelector('.sub-nav');
+sub_nav.style.display = 'none'
 
 btn_menu.addEventListener('click', function() {
     if (header.clientHeight === height_header) {
@@ -49,6 +51,14 @@ for (const item of list_item_nav) {
 
         if (!isParnetMenu) {
             header.style.height = null;
+            sub_nav.style.display = 'none';
+        } else {
+            event.preventDefault();
+            if (sub_nav.style.display == 'none') {
+                sub_nav.style.display = 'block';
+            } else {
+                sub_nav.style.display = 'none';
+            }
         }
     })
 }
